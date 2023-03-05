@@ -1,23 +1,7 @@
-# Template > Playcanvas Engine
-
-Playcanvas Engine is the core of [Playcanvas](https://playcanvas.com). This template helps you jump start a engine only development environement on the cloud in no time. Great to test and learn this amazing engine.
-#### External dependencies.
-- Scripts
-> https://code.playcanvas.com/playcanvas-stable.min.js
-
-#### Folder structure
-- 📁/root
-    - 📁/logic *all your app logic should be here*
-    - 📁/ui *all your user interface logic should be here*
-        - 📁/schemas *auto generated JSON schemas from the [WYSIWYG Editor](#wysiwyg)*
-        - 🗎 Bootstrap.js
-        - 🗎 App.js *__entry file__*
-    - 📁/workers *__advanced__: place and register your service workers here*
-
-### To start just modify the src/ui/App.js file.
-This sets up the [Playcanvas#usage](https://github.com/playcanvas/engine#usage) found in the official repo of  the Playcanvas Engine.
-```
-// https://github.com/playcanvas/engine#usage
+var namespace = 'App';
+//----------------------------------------------------------------------------------------------------------------------
+// https://github.com/playcanvas/engine
+//----------------------------------------------------------------------------------------------------------------------
 class App {
 
   constructor() {
@@ -60,10 +44,8 @@ class App {
 
         app.start();
   }
-```
 
-
-#### Find the live demo [here](https://webnatives.app/templates).
-
----------------------------
-© 2023 WebNatives
+}
+//----------------------------------------------------------------------------------------------------------------------
+exports = App;
+//--------------------------------------------------------------------------------------------------------------------EOF
